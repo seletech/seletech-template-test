@@ -24,13 +24,10 @@ function newQuote(){
     authorText.textContent = quote.author;
     // check if author filed is null and replace it with unknown
     if(!quote.author){
-        authorText.textContent= "Unknown";
-        complete();
+        getQuotes();
+     
     }
-    else if(!quote.text){
-        quoteText.textContent= "Unknown";
-        complete();
-    }
+    
     else{
         //set quote and hide loader
         quoteText.textContent= quote.text;
