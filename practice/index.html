@@ -458,14 +458,22 @@
                   <button id="openwindow" class="btn-style class1" onclick="openWindow()">Open Window</button>
               </fieldset>
           </div>
-          <div class="cen-align">
+          <div class="cen-left-align">
               <fieldset>
                   <legend class="switch-tab">Switch Tab Example</legend>
                   <a id="opentab" class="btn-style class1 class2" href="https://seletech.in/" target="_blank">Open Tab</a>
               </fieldset>
           </div>  
-          <div class="">
-              <fieldset class="pull-right">
+          <div class="cen-right-align">
+            <fieldset>
+                <legend class="disabled-btn">Buttons Example</legend>
+            
+                <button type="button" class="btn btn-success">Enabled</button>
+                <button type="button" class="btn btn-danger" disabled>Disabled</button>
+            </fieldset>
+        </div> 
+          <div class="right-align">
+              <fieldset>
                   <legend>Switch To Alert Example</legend>
                   <input id="name" name="enter-name" class="inputs" placeholder="Enter Your Name" type="text"><br>
                   <input id="alertbtn" class="btn-style" value="Alert" onclick="displayAlert()" type="submit">
@@ -484,8 +492,9 @@ function promptFun() {
   }
 }
 </script>
-          <br>
+          <br> 
       </div>
+      <br/>
        <div class="block large-row-spacer">
           <div class="left-align">
               <fieldset>
@@ -498,13 +507,10 @@ function promptFun() {
                   <legend class="switch-tab">Link Example</legend>
                   <a href="https://seletech.in/" target="_blank"> Example Link </a>
               </fieldset>
-          </div>
-
+          </div>        
         
-          
-        
-<div class="">
-              <fieldset class="pull-right">
+            <div  class="pull-right">
+              <fieldset>
                   <legend>Range slider Example</legend>
                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                  <p class="visually-hidden"> <span ></span></p>
