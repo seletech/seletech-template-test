@@ -37,6 +37,21 @@
 		}
 	</script>
 	<style type="text/css">
+		/* card css */
+		aside {
+  background: #fe9;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 1em;
+  transform: scale(.9);
+  transform-origin: 0 0;
+  transition: transform .6s;
+  user-select: none;
+}
+
+.large {
+  transform: scale(1.3);
+}
 
 		.footer_top_agile_w3ls {
 		        padding: 3em 0;
@@ -697,7 +712,34 @@
 			</div>
 		
 		</div>
+	<!-- last but one -->
+	<div class="block large-row-spacer">
+		<div class="left-align">
+			<fieldset style="margin-bottom:60px">
+				<legend>Mouse Hover Example</legend>
+				<aside>
+					<h3>My Card</h3>
+					<p>Double click to resize this object.</p>
+				  </aside>
+				  
+			</fieldset>
+		</div>
+
+		<div class="cen-align">
+			<fieldset style="margin-bottom:60px">
+				<legend>Drag and Drop & Resize</legend>
+				<a href="https://only-testing-blog.blogspot.com/2014/09/drag-and-drop.html">Click Here</a>
+			</fieldset>
+		</div>
+		<div class="right-align">
+			<fieldset style="margin-bottom:60px">
+				<legend>Emoji Example</legend>
+<input id="txt-display" class="btn-style btn-sm class2" value="Click Me" onclick="document.getElementById('txt-demo').innerHTML = Date()"type="submit">
 	
+			</fieldset>
+		</div>
+	
+	</div>
 	<!-- Last row -->
 		<div class="block large-row-spacer">
 			<p id="txt-demo"class="text-success"></p>
@@ -779,5 +821,14 @@
 			  output.innerHTML = this.value;
 			}
 	</script>
+<!-- Card Resize -->
+	<script>
+		const card = document.querySelector('aside');
 
+card.addEventListener('dblclick', function (e) {
+  card.classList.toggle('large');
+});
+
+
+	</script>
 </body>
