@@ -13,16 +13,23 @@
       
     }
     /* resizable css */
-		.ui-widget-header {
-text-align: center;
+    .ui-widget-content{
+      background: none !important;
+    }
+.ui-widget-header {
+
+  border: none !important;
+  text-align: center;
 font-size: medium;
-
-
+	color: #ffffff;
+  background: #645d9c !important;
+	font-weight: bold;
 }
-
 #resizable { width: 450px; height: 150px; 
 text-align: center; }
-  
+.color-demo{
+  color: rgb(32, 233, 32);
+}
     </style>
 <script>
   
@@ -38,8 +45,9 @@ function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
-  document.querySelector('.txt').textContent="Dropped!";
-  
+  let txt = document.querySelector('.txt');
+  txt.textContent="Dropped!"
+  txt.setAttribute('class','color-demo');
    
   
 }
@@ -133,22 +141,18 @@ $( "#resizable" ).resizable();
 
       </div>
     </div>
-
-   <!-- last but one -->
-	<div class="block large-row-spacer">
-	
+    <div class="row">
+      <br/>
+    </div>
 
 		<div class="row">
 			<fieldset style="margin-bottom:60px">
-				<legend>Resizable Example</legend>
+				<h3 style="color: #c34d4a;">Resizable Example</h3>
 				<div id="resizable" class="ui-widget-content">
-					<h3  class="ui-widget-header" style="color: #fff;background-color: #39949a;">Resizable</h3>
+					<h3  class="ui-widget-header" >Resizable</h3>
 			</fieldset>
 		</div>
-		
-	
-	</div> 
-  </div>
+		 </div>
 
 
 </body>
