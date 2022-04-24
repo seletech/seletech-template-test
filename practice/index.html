@@ -8,11 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="icon" href="https://www.google.com/s2/u/0/favicons?domain=saucedemo.com" />
-	<!-- resizable -->
-	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<!-- resizable end -->
+	
 	<script>
 		function openWindow() {
 		    myWin = window.open("https://seletech.in/", "myWin", "width=1200, height=600, top=100, left=100, scrollbars=yes, resizable=yes");
@@ -42,16 +38,7 @@
 		}
 	</script>
 	<style type="text/css">
-		/* resizable css */
-		.ui-widget-header {
-text-align: center;
-font-size: medium;
-
-
-}
-
-#resizable { width: 450px; height: 150px; 
-text-align: center; }
+		
 		/* card css */
 		aside {
   background: #fe9;
@@ -715,7 +702,7 @@ text-align: center; }
 			<div class="cen-align">
 				<fieldset style="margin-bottom:60px">
 					<legend>Drag and Drop & Resize</legend>
-					<a href="https://only-testing-blog.blogspot.com/2014/09/drag-and-drop.html">Click Here</a>
+					<a href="dragAndDrop.html">Click Here</a>
 				</fieldset>
 			</div>
 			<div class="right-align">
@@ -729,20 +716,7 @@ text-align: center; }
 				</fieldset>
 			</div>
 		</div>
-	<!-- last but one -->
-	<div class="block large-row-spacer">
 	
-
-		<div class="left-align">
-			<fieldset style="margin-bottom:60px">
-				<legend>Resizable Example</legend>
-				<div id="resizable" class="ui-widget-content">
-					<h3  class="ui-widget-header" style="color: #fff;background-color: #39949a;">Resizable</h3>
-			</fieldset>
-		</div>
-		
-	
-	</div>
 	<!-- Last row -->
 		<div class="block large-row-spacer">
 			<p id="txt-demo"class="text-success"></p>
@@ -831,10 +805,7 @@ text-align: center; }
 card.addEventListener('dblclick', function (e) {
   card.classList.toggle('large');
 });
-// Resizable
-$(function() {
-$( "#resizable" ).resizable();
-});
+
 
 	</script>
 </body>
