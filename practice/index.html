@@ -8,6 +8,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link rel="icon" href="https://www.google.com/s2/u/0/favicons?domain=saucedemo.com" />
+	<!-- resizable -->
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<!-- resizable end -->
 	<script>
 		function openWindow() {
 		    myWin = window.open("https://seletech.in/", "myWin", "width=1200, height=600, top=100, left=100, scrollbars=yes, resizable=yes");
@@ -37,6 +42,16 @@
 		}
 	</script>
 	<style type="text/css">
+		/* resizable css */
+		.ui-widget-header {
+text-align: center;
+font-size: medium;
+
+
+}
+
+#resizable { width: 450px; height: 150px; 
+text-align: center; }
 		/* card css */
 		aside {
   background: #fe9;
@@ -45,7 +60,7 @@
   padding: 1em;
   transform: scale(.9);
   transform-origin: 0 0;
-  transition: transform .6s;
+  transition: transform .4s;
   user-select: none;
 }
 
@@ -703,41 +718,29 @@
 					<a href="https://only-testing-blog.blogspot.com/2014/09/drag-and-drop.html">Click Here</a>
 				</fieldset>
 			</div>
-			<div class="cen-left-align">
+			<div class="right-align">
 				<fieldset style="margin-bottom:60px">
-					<legend>Emoji Example</legend>
-<input id="txt-display" class="btn-style btn-sm class2" value="Click Me" onclick="document.getElementById('txt-demo').innerHTML = Date()"type="submit">
-		
+					<legend>Mouse Hover Example</legend>
+					<aside>
+						<h3>My Card</h3>
+						<p>Double click to resize this object.</p>
+					  </aside>
+					  
 				</fieldset>
 			</div>
-		
 		</div>
 	<!-- last but one -->
 	<div class="block large-row-spacer">
+	
+
 		<div class="left-align">
 			<fieldset style="margin-bottom:60px">
-				<legend>Mouse Hover Example</legend>
-				<aside>
-					<h3>My Card</h3>
-					<p>Double click to resize this object.</p>
-				  </aside>
-				  
+				<legend>Resizable Example</legend>
+				<div id="resizable" class="ui-widget-content">
+					<h3  class="ui-widget-header" style="color: #fff;background-color: #39949a;">Resizable</h3>
 			</fieldset>
 		</div>
-
-		<div class="cen-align">
-			<fieldset style="margin-bottom:60px">
-				<legend>Drag and Drop & Resize</legend>
-				<a href="https://only-testing-blog.blogspot.com/2014/09/drag-and-drop.html">Click Here</a>
-			</fieldset>
-		</div>
-		<div class="right-align">
-			<fieldset style="margin-bottom:60px">
-				<legend>Emoji Example</legend>
-<input id="txt-display" class="btn-style btn-sm class2" value="Click Me" onclick="document.getElementById('txt-demo').innerHTML = Date()"type="submit">
-	
-			</fieldset>
-		</div>
+		
 	
 	</div>
 	<!-- Last row -->
@@ -828,7 +831,10 @@
 card.addEventListener('dblclick', function (e) {
   card.classList.toggle('large');
 });
-
+// Resizable
+$(function() {
+$( "#resizable" ).resizable();
+});
 
 	</script>
 </body>
