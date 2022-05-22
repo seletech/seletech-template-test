@@ -545,149 +545,68 @@
 		</div>
 
 		<div class="block large-row-spacer">
-			<div class="left-align">
+			<div>
 				<fieldset>
 					<legend>Web Table Example</legend>
-					<table class="product table-display" name="employes" border="1">
+					<table id="table1" class="product table-display" >
+						<thead>
+						  <tr>
+							<th class="header"><span>Last Name</span></th>
+							<th class="header"><span>First Name</span></th>
+							<th class="header"><span>Email</span></th>
+							<th class="header"><span>Due</span></th>
+							<th class="header headerSortUp"><span>Web Site</span></th>
+							<th class="header"><span>Action</span></th>
+						  </tr>
+						</thead>
 						<tbody>
 							<tr>
-								<th>employee_id</th>
-								<th>first_name</th>
-								<th>Experiance</th>
-								<th>Profile_link</th>
-							</tr>
-							<tr>
-								<td>32105</td>
-								<td>Nancy</td>
-
-								<td>3</td>
-								<td><a href="#">link1</a></td>
-							</tr>
+							<td>Conway</td>
+							<td>Tim</td>
+							<td>tconway@earthlink.net</td>
+							<td>$50.00</td>
+							<td>https://www.saucedemo.com/</td>
+							<td>
+							  <a href="#edit">edit</a>
 							
-							<tr>
-								<td>32108</td>
-								<td>Luis</td>
+							</td>
+						  </tr><tr>
+							<td>Smith</td>
+							<td>John</td>
+							<td>jsmith@gmail.com</td>
+							<td>$50.00</td>
+							<td>https://seletech.in/practice/</td>
+							<td>
+							  <a href="#edit">edit</a>
+						
+							</td>
+						  </tr><tr>
+							<td>Doe</td>
+							<td>Jason</td>
+							<td>jdoe@hotmail.com</td>
+							<td>$100.00</td>
+							<td>https://www.selenium.dev/</td>
+							<td>
+							  <a href="#edit">edit</a>
+							 
+							</td>
+						  </tr><tr>
+							<td>Bach</td>
+							<td>Frank</td>
+							<td>fbach@yahoo.com</td>
+							<td>$51.00</td>
+							<td>https://facebook.com/</td>
+							<td>
+							  <a href="#edit">edit</a>
+							 
+							</td>
+						  </tr></tbody>
+					  </table>
 
-								<td>35</td>
-								<td><a href="#">link2</a></td>
-							
-							</tr>
-							<tr>
-								<td>32109</td>
-								<td>Jose Manuel</td>
-
-								<td>5</td>
-								<td><a href="#">link3</a></td>
-							</tr>
-							<tr>
-								<td>32110</td>
-								<td>Ismael</td>
-
-								<td>5</td>
-								<td><a href="#">link4</a></td>
-								
-							</tr>
-							<tr>
-								<td>32111</td>
-								<td>Daniel</td>
-
-								<td>10</td>
-								<td><a href="#">link5</a></td>
-								
-							</tr>
-							<tr>
-								<td>32112</td>
-								<td>John</td>
-								<td>2</td>
-								<td><a href="#">link6</a></td>
-							</tr>
-						</tbody>
-					</table>
+					
 				</fieldset>
 			</div>
-			<div class="right-align">
-				<fieldset>
-					<legend>Element Displayed Example</legend>
-					<input id="hide-textbox" class="btn-style class2" value="Hide" onclick="hideElement()" type="submit" />
-					<input id="show-textbox" class="btn-style class2" value="Show" onclick="showElement()" type="submit" />
-					<br />
-					<br />
-					<input id="displayed-text" name="show-hide" class="inputs displayed-class" placeholder="Hide/Show Example" type="text" />
-				</fieldset>
-				<fieldset>
-					<legend>Web Table Fixed header</legend>
-					<div class="tableFixHead" style="overflow-y: auto; height: 195px;">
-						<table class="product" id="profession">
-							<thead>
-								<tr>
-									<th style="position: sticky; top: 0;">Name</th>
-									<th style="position: sticky; top: 0;">Position</th>
-									<th style="position: sticky; top: 0;">City</th>
-									<th style="position: sticky; top: 0;">Amount</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Alex</td>
-									<td>Engineer</td>
-									<td>Chennai</td>
-									<td>28</td>
-								</tr>
-								<tr>
-									<td>Ben</td>
-									<td>Mechanic</td>
-									<td>Bengaluru</td>
-									<td>23</td>
-								</tr>
-								<tr>
-									<td>Dwayne</td>
-									<td>Manager</td>
-									<td>Kolkata</td>
-									<td>48</td>
-								</tr>
-								<tr>
-									<td>Ivory</td>
-									<td>Receptionist</td>
-									<td>Chennai</td>
-									<td>18</td>
-								</tr>
-								<tr>
-									<td>Jack</td>
-									<td>Engineer</td>
-									<td>Pune</td>
-									<td>32</td>
-								</tr>
-								<tr>
-									<td>Joe</td>
-									<td>Postman</td>
-									<td>Chennai</td>
-									<td>46</td>
-								</tr>
-								<tr>
-									<td>Raymond</td>
-									<td>Businessman</td>
-									<td>Mumbai</td>
-									<td>37</td>
-								</tr>
-								<tr>
-									<td>Ronaldo</td>
-									<td>Sportsman</td>
-									<td>Chennai</td>
-									<td>31</td>
-								</tr>
-								<tr>
-									<td>Smith</td>
-									<td>Cricketer</td>
-									<td>Delhi</td>
-									<td>33</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<br />
-					<div class="totalAmount">Total Amount Collected: 296</div>
-				</fieldset>
-			</div>
+			
 		</div>
 		<div class="block large-row-spacer">
 			<div class="left-align">
@@ -723,15 +642,104 @@
 	
 	<!-- Last row -->
 		<div class="block large-row-spacer">
-			<p id="txt-demo"class="text-success"></p>
-				<fieldset style="margin-bottom:60px">
-					<legend>I Frame Example</legend>
-					<iframe id="courses-iframe" src="https://seletech.in/index.html" name="iframe-name" style="width: 100%; height: 600px" scrolling="yes" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0">
-					</iframe>
-				</fieldset>
+			<div class="left-align">
+			<fieldset>
+				<legend>Element Displayed Example</legend>
+				<input id="hide-textbox" class="btn-style class2" value="Hide" onclick="hideElement()" type="submit" />
+				<input id="show-textbox" class="btn-style class2" value="Show" onclick="showElement()" type="submit" />
+				<br />
+				<br />
+				<input id="displayed-text" name="show-hide" class="inputs displayed-class" placeholder="Hide/Show Example" type="text" />
+			</fieldset>
+			</div>
+			<div class="right-align">
+			<fieldset>
+				<legend>Web Table Fixed header</legend>
+				<div class="tableFixHead" style="overflow-y: auto; height: 195px;">
+					<table class="product" id="profession">
+						<thead>
+							<tr>
+								<th style="position: sticky; top: 0;">Name</th>
+								<th style="position: sticky; top: 0;">Position</th>
+								<th style="position: sticky; top: 0;">City</th>
+								<th style="position: sticky; top: 0;">Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Alex</td>
+								<td>Engineer</td>
+								<td>Chennai</td>
+								<td>28</td>
+							</tr>
+							<tr>
+								<td>Ben</td>
+								<td>Mechanic</td>
+								<td>Bengaluru</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>Dwayne</td>
+								<td>Manager</td>
+								<td>Kolkata</td>
+								<td>48</td>
+							</tr>
+							<tr>
+								<td>Ivory</td>
+								<td>Receptionist</td>
+								<td>Chennai</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>Jack</td>
+								<td>Engineer</td>
+								<td>Pune</td>
+								<td>32</td>
+							</tr>
+							<tr>
+								<td>Joe</td>
+								<td>Postman</td>
+								<td>Chennai</td>
+								<td>46</td>
+							</tr>
+							<tr>
+								<td>Raymond</td>
+								<td>Businessman</td>
+								<td>Mumbai</td>
+								<td>37</td>
+							</tr>
+							<tr>
+								<td>Ronaldo</td>
+								<td>Sportsman</td>
+								<td>Chennai</td>
+								<td>31</td>
+							</tr>
+							<tr>
+								<td>Smith</td>
+								<td>Cricketer</td>
+								<td>Delhi</td>
+								<td>33</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<br />
+				<div class="totalAmount">Total Amount Collected: 296</div>
+			</fieldset>
+		</div>
 		</div>
 
-		
+
+	<!-- Last row -->
+	<div class="block large-row-spacer">
+		<p id="txt-demo"class="text-success"></p>
+			<fieldset style="margin-bottom:60px">
+				<legend>I Frame Example</legend>
+				<iframe id="courses-iframe" src="https://seletech.in/index.html" name="iframe-name" style="width: 100%; height: 600px" scrolling="yes" marginwidth="0" marginheight="0" vspace="0" hspace="0" frameborder="0">
+				</iframe>
+			</fieldset>
+	</div>
+
 		
 		<!-- <footer class="jumbotron text-center header_style">
       <center>Copyright © 2019 QAClick Academy. All Rights Reserved. </center>
